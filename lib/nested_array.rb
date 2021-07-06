@@ -17,16 +17,18 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 #
-# Test file doesn't work so I am including put statements to verify
-# each function's correctness
+# Why doesn't this code work ?
 #
+
+ma = ORGANIC_PRODUCE
+mb = CONVENTIONAL_PRODUCE
 
 def assembled_matrix
   # Build an array that contains both of the above arrays
   # This matrix will represent a produce storage room
   # Organic standards require that organic products be stored ABOVE conventional, not the other way around
   # Make sure conventional produce is first, on the 'zeroth' / 'bottom' shelf
-  [CONVENTIONAL_PRODUCE, ORGANIC_PRODUCE]
+  [mb, ma]
 end
 puts assembled_matrix.inspect
 
@@ -34,7 +36,7 @@ def sorted_matrix
   # Using Array literal syntax only, build another nested array that 
   # uses the arrays of conventional and organic produce as before.
   # However, this time, sort each internal array alphabetically by the first character
-  [CONVENTIONAL_PRODUCE.sort{|a,b| a[0] <=> b[0]}, CONVENTIONAL_PRODUCE.sort{|a,b| a[0] <=> b[0]}]
+  [mb.sort{|a,b| a[0] <=> b[0]}, ma.sort{|a,b| a[0] <=> b[0]}]
 end
 puts sorted_matrix.inspect
 
