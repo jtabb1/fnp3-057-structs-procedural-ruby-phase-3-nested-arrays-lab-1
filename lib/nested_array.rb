@@ -17,14 +17,11 @@ CONVENTIONAL_PRODUCE = [
 ]
 
 #
-# Why doesn't this code work ?
+# Illustration of array pass by reference
 #
 
-# ma = ORGANIC_PRODUCE
-# mb = CONVENTIONAL_PRODUCE
-
-MA = ['qq','ww','ee']
-MB = ['aa','ss','dd']
+MA = ORGANIC_PRODUCE
+MB = CONVENTIONAL_PRODUCE
 
 def assembled_matrix
   # Build an array that contains both of the above arrays
