@@ -16,6 +16,11 @@ CONVENTIONAL_PRODUCE = [
   "Eggplant"
 ]
 
+#
+# Test file doesn't work so I am including put statements to verify
+# each function's correctness
+#
+
 def assembled_matrix
   # Build an array that contains both of the above arrays
   # This matrix will represent a produce storage room
